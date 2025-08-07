@@ -6,14 +6,30 @@ body{
                 padding: 0;
             }
             header{
+                padding: 20px;
+                height: 200px;
                 background: black;
+                background-image: url("images/hero.jpg");
+                background-size:100%;
+                text-align: center;
+                background-position: center;
+            }
+
+            header a{
+                color: white;
+                text-decoration: none;
+                margin-top:20px;
             }
 
             header .logo a{
-                background-color: red;
+                background-image: url("images/logo.png");
+                background-size: 80px;
+                background-repeat: no-repeat;
                 display: inline-block;
-                width:300px;
+                width:80px;
                 height:80px;
+                position: relative;
+                top: -30px;
                 text-indent: -99999999px;
             }
 
@@ -24,6 +40,32 @@ body{
                 display: flex;
                 flex-direction: row;
             }
+
+            .features{
+                background: white;
+                color: gray;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .features figure{
+                margin: auto;
+                text-align: center;
+                width: 400px;
+                text-transform: uppercase;
+            }
+
+            .features img{
+                width: 400px;
+                border-radius:50%;
+                box-shadow: grey 0px 0px 10px;
+            }
+
+            .features figcaption{
+                font-size: 30px;
+            }
+
             div{
                 background: red;
                 margin: auto;
@@ -42,15 +84,12 @@ body{
                 text-decoration: none;
             }
 
-            a{
-                text-decoration: none;
-            }
-
             a:hover{
                 text-decoration: underline;
             }
 
             footer{
                 background: black;
-                padding: 10px 20px;
+                padding: 20px 20px;
+                text-align:center;
             }
