@@ -7,8 +7,16 @@ body{
             }
             header{
                 background: black;
-                padding: 20px;
             }
+
+            header .logo a{
+                background-color: red;
+                display: inline-block;
+                width:300px;
+                height:80px;
+                text-indent: -99999999px;
+            }
+
             section{
                 background: white;
                 color: grey;
@@ -31,6 +39,15 @@ body{
             li {
                 display: inline-block;
                 margin-right: 20px;
+                text-decoration: none;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
             }
 
             footer{
