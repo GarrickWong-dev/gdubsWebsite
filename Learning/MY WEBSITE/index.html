@@ -4,32 +4,64 @@
         <title>My Page!</title>
         <style>
             body{
-                background: rgb(255, 177, 229);
+                background: rgb(173, 236, 255);
                 color: white;
-                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 0;
+                padding: 0;
             }
-            h1 {
+            header{
                 background: black;
-                color: rgb(245, 106, 106)
+                padding: 20px;
             }
-            h2 {
-                color: rgb(69, 144, 163);
-                opacity: 0.5
+            section{
+                background: white;
+                color: grey;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
             }
-            button{
-                background: rgb(255, 0, 234);
-                border: none;
-                color: white;
-                border-radius: 10px;
+            div{
+                background: red;
+                margin: auto;
+                width: 100px;
+            }
+
+            ul{
+                margin:0;
+                padding:0;
+                list-style-type: none;
+            }
+
+            li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            footer{
+                background: black;
+                padding: 10px 20px;
             }
         </style>
     </head>
     <body>
-        <h1>My WebPage</h1>
-        <h2>about me</h2>
-        <p>I'm an overall awesome guy.
-            You don't have to take my word for it though. It's been <em>scientifically proven</em> on so many levels
-        </p>
-        <button>Click here to learn more</button>
+        <header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Location</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <h1>Title</h1>
+        </header>
+        <section>
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </section>
+        <section>lower-section</section>
+        <footer>footer</footer>
+        
     </body>
 </html>
