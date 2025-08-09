@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        @font-face{
+            font-family: 'Digital-7';
+            src: url("Assets/digital-7.ttf") format('truetype');
+            font-weight: normal;
+            font-style:normal;
+        }
+        @keyframes choppy-shake {
+            0%, 100% { 
+                transform: translateX(0) rotate(0deg);
+            }
+            25% { 
+                transform: translateX(-4px) rotate(-2deg);
+            }
+            75% { 
+                transform: translateX(4px) rotate(2deg);
+            }
+        }
+
+        .shake {
+            animation: choppy-shake 0.2s steps(2, end) infinite;
+        }
+
+        body #container{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image:url("Assets/bgEgg.PNG");
+            background-color: rgb(255, 249, 172);
+            background-size: 500px;
+            background-repeat:repeat;
+            background-position:top left;
+        }
+        img{
+            width: 30vh;
+            height: 35vh;
+            display:block;
+        }
+        #timer{
+            width: 18vh;
+            height: 6vh;
+            margin: 2vh;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            border-radius: 10%;
+            border: 0.5vh solid rgb(161, 161, 161);
+            font-size: 5vh;
+            color:rgb(0, 255, 42);
+            font-family: 'Digital-7', monospace;
+            align-items:center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <img src="Assets/Fire1.PNG" alt="Fire animation 1" id="fire">
+        <div id="timer">0:30</div>
+        <script src = "timer.js"></script>
+    </div>
+</body>
+</html>
